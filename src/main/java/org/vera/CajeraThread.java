@@ -52,6 +52,8 @@ public class CajeraThread extends Thread{
                     cliente.getNombre()+ "-->Timepo: "+
                     (System.currentTimeMillis() - this.initialTime)/1000+" segundos.");
         }
+        System.out.println("La cajera " + this.nombre + " ha terminado de procesar " +
+                this.cliente.getNombre() + " en el tiempo: " + (System.currentTimeMillis()-this.initialTime)/1000 + " segundos.");
     }
     private void esperarSegundos(int segundos){
         try {
